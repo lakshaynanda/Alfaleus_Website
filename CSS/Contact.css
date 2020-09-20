@@ -1,0 +1,312 @@
+#NavBar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.ContactContainer {
+    display: flex;
+    margin-top: 12.41vh;
+    margin-bottom: 20vh;
+}
+
+.ContactHeading {
+    font-size: 3.4375rem;
+    font-family: LeagueSpartan, sans-serif;
+    color: #494949;
+}
+
+.ContactForm {
+    padding: 6.389vh 0 0 6.875vw;
+}
+
+.InputName {
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 1.25rem;
+    color: #4E4C4C;
+    margin-top: 2.78vh;
+}
+
+.Inp {
+    width: 21.93vw;
+    height: 2.07vw;
+    /*3.07vw*/
+    padding-left: 1.04vw;
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.063rem;
+    border: #A6A6A6 1px solid;
+    border-radius: 4px;
+}
+
+.ContactForm textarea {
+    height: 6vw;
+    resize: none;
+    padding-top: 1.04vw;
+}
+
+.Toggles {
+    display: flex;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+.Toggles div {
+    margin: 0;
+}
+
+/*TOGGLE START*/
+#switch,
+#switch2 {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.label1,
+.label2 {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 2.6vw;
+    height: 1.3vw;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    margin-right: 1vw;
+}
+
+.label1:after,
+.label2:after {
+    content: '';
+    position: absolute;
+    top: 0.148vw;
+    left: 0.13vw;
+    width: 1.04vw;
+    height: 1.04vw;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+#switch:checked+.label1,
+#switch2:checked+.label2 {
+    background: #73B6D3;
+}
+
+#switch:checked+.label1:after,
+#switch2:checked+.label2:after {
+    left: calc(100% - 0.13vw);
+    transform: translateX(-100%);
+}
+
+.label1:active:after,
+.label2:active:after {
+    width: 1.69vw;
+}
+
+/*TOGGLE END*/
+
+
+.SubmitButton {
+    width: 10.3125vw;
+    height: 3.0729vw;
+    padding: 0.833vw 2.8125vw;
+    margin-top: 2.78vh;
+    border: none;
+    border-radius: 31px;
+    z-index: -1;
+
+    background: #73B6D3;
+    background: -webkit-linear-gradient(to right, #F3F3F3, #CBE0E9, #73B6D3);
+    background: linear-gradient(to right, #F3F3F3, #CBE0E9, #73B6D3);
+    color: #203A43;
+
+    font-size: 1.375rem;
+    font-family: Montserrat-Bold, sans-serif;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+
+.HoverSubmitBtn {
+    background: #CBE0E9;
+    background: -webkit-linear-gradient(to left, #CBE0E9, #F3F3F3);
+    background: linear-gradient(to left, #CBE0E9, #F3F3F3);
+}
+
+.OurOffice {
+    margin-top: 15.56vh;
+    margin-left: 5.57vw;
+    width: 17.81vw;
+    height: 32.81vw;
+    background-color: #F9F9F9;
+    border-radius: 19px;
+    box-shadow: 9px 20px 41px rgba(0, 0, 0, 0.16);
+    display: grid;
+    align-content: space-between;
+}
+
+.OurOffice img {
+    width: 17.81vw;
+}
+
+.MapHeading {
+    font-family: LeagueSpartan, sans-serif;
+    font-size: 1.75rem;
+    /* margin-top: 3.98vh; */
+    margin-left: 1.35vw;
+}
+
+.MapText {
+    margin: 1.8vh 0 0 1.35vw;
+    /* margin-left: 1.35vw; */
+    width: 14.32vw;
+
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.375rem;
+    line-height: 1.688rem;
+}
+
+.MapLink {
+    margin-left: 1.3vw;
+    text-decoration: none;
+    color: #7BBAD5;
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 1.625rem;
+    margin-bottom: 1.94vh;
+}
+
+a.MapLink:hover {
+    color: rgb(60, 155, 196);
+    transition: 0.5s;
+}
+
+.ContactBG {
+    position: absolute;
+    width: 47.1875vw;
+    top: 47.685vh;
+    left: 50.1875vw;
+}
+
+.Error-msg {
+    padding: 20px;
+    background-color: #f44336;
+    /* Red */
+    color: white;
+    margin-bottom: 15px;
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.375rem;
+    border-radius: 10px;
+}
+
+.Success-msg {
+    padding: 20px;
+    background-color: #00AB66;
+    /* green */
+    color: white;
+    margin-bottom: 15px;
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.375rem;
+    border-radius: 10px;
+
+}
+
+.Recpatcha-error {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        font-size: calc(9px + 11 *((100vw - 350px)/418));
+    }
+
+    .ContactContainer {
+        flex-direction: column;
+        margin-bottom: 0vw;
+    }
+
+    .ContactHeading {
+        width: 75vw;
+        margin: 8vw auto;
+        text-align: center;
+    }
+
+    .ContactForm {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    .InputName {
+        font-size: 1.6rem;
+    }
+
+    .Toggles {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50vw;
+    }
+
+    .ContactBG {
+        display: none;
+    }
+
+    .Inp {
+        width: 75vw;
+        height: 8vw;
+        padding: 0 3vw;
+    }
+
+    .ContactForm textarea {
+        height: 30vw;
+        padding-top: 3vw;
+    }
+
+    .label1,
+    .label2 {
+        transform: scale(3);
+        display: inline;
+        margin-left: 2vw;
+    }
+
+    .SubmitButton {
+        width: 40vw;
+        height: 10vw;
+        text-align: center;
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+
+    .OurOffice {
+        width: 85vw;
+        margin: 15vh auto;
+        grid-template-columns: 39vw 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .OurOffice img {
+        width: 39.5vw;
+    }
+
+    .MapText {
+        width: 30vw;
+        margin-left: 5vw;
+
+        font-size: 1rem;
+        margin-top: 1vw;
+    }
+
+    .MapHeading {
+        font-size: 1.5rem;
+        margin-left: 5vw;
+        margin-top: 3vw;
+    }
+
+    .MapLink {
+        font-size: 1.1rem;
+        margin: 2vw 0;
+    }
+}

@@ -1,0 +1,739 @@
+#NavBar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+#ScrollPanes {
+    margin-top: 12.4vh;
+    display: grid;
+    justify-items: center;
+    grid-gap: 10vw;
+}
+
+.Pane1,
+.Pane2,
+.Pane3,
+.Pane5,
+.Pane6,
+.Pane7 {
+    width: 100%;
+    position: relative;
+}
+
+.Pane1Heading,
+.Pane2Heading,
+.Pane3Heading,
+.Pane5Heading,
+.Pane6Heading,
+.Pane7Heading {
+    font-family: LeagueSpartan, sans-serif;
+    font-size: 3.063rem;
+}
+
+.Pane1Text,
+.Pane2Text,
+.Pane3Text,
+.TestText,
+.Pane6Text {
+    font-family: Montserrat-Regular;
+    font-size: 1.688rem;
+    text-align: justify;
+}
+
+.Pane1IconDisp,
+.Pane2IconDisp,
+.Pane3IconDisp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Pane1Icon,
+.Pane2Icon {
+    display: grid;
+    grid-gap: 1vh;
+}
+
+.Pane1 {
+    margin-bottom: 20vh;
+}
+
+.Pane2 {
+    margin-bottom: 10vh;
+}
+
+.Pane3 {
+    margin-bottom: 14vh;
+}
+
+.Pane7 {
+    margin-bottom: 0vh;
+}
+
+.SrollPaneBG1 {
+    width: 52.5vw;
+    position: absolute;
+    top: 26.11vh;
+    left: -3.02vw;
+}
+
+.Pane1Heading {
+    width: 40.57vw;
+    margin-top: 15vh;
+    margin-left: 51vw;
+}
+
+.Pane1Text {
+    width: 40.57vw;
+    line-height: 2.25rem;
+    margin-top: 1.6vh;
+    margin-left: 51vw;
+}
+
+.Pane1IconDisp {
+    width: 40.57vw;
+    margin-top: 8.1vh;
+    margin-left: 51vw;
+}
+
+
+.Pane1Icon img {
+    max-height: 102px;
+    min-height: 5.26vw;
+    justify-self: center;
+}
+
+.icondesc {
+    font-size: 1rem;
+    font-family: Roboto-Regular, sans-serif;
+    text-align: center;
+}
+
+.SrollPaneBG2 {
+    width: 49.375vw;
+    position: absolute;
+    top: 16.2vh;
+    left: 48vw;
+}
+
+.Pane2Heading {
+    width: 36.7vw;
+    margin-top: 15.56vh;
+    margin-left: 6.875vw;
+}
+
+.Pane2Text {
+    width: 36.7vw;
+    line-height: 2.25rem;
+    margin-top: 1.6vh;
+    margin-left: 6.875vw;
+}
+
+.Pane2IconDisp {
+    width: 38.4vw;
+    margin-left: 6.875vw;
+    margin-top: 11.9vh;
+}
+
+.Pane2Icon img {
+    max-height: 102px;
+    min-height: 5.26vw;
+    justify-self: center;
+}
+
+.SrollPaneBG3 {
+    width: 33vw;
+    position: absolute;
+    top: 14vh;
+    left: 6.82vw;
+}
+
+.Pane3Heading {
+    width: 36.7vw;
+    margin-top: 15vh;
+    margin-left: 51.04vw;
+}
+
+.Pane3Text {
+    width: 36vw;
+    line-height: 2.25rem;
+    margin-top: 1.6vh;
+    margin-left: 51.04vw;
+}
+
+.Pane3IconDisp {
+    width: 35.6vw;
+    margin-left: 51vw;
+    margin-top: 4.35vh;
+}
+
+.Pane3Icon img {
+    justify-self: center;
+    max-height: 109px;
+    min-height: 5.26vw;
+}
+
+.ShelfHeading {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.875rem;
+    text-align: center;
+    margin-bottom: 1.4vh;
+}
+
+.Shelf {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(5, auto);
+    grid-row-gap: 2vh;
+    justify-content: space-between;
+    width: 84.45vw;
+    padding: 12.2vh 6.875vw;
+    background-color: #F9F9F9;
+}
+
+.Clogo {
+    width: 10.42vw;
+}
+
+.Clogodesc {
+    width: 10.42vw;
+    font-size: 1rem;
+    font-family: Roboto-Regular, sans-serif;
+    text-align: center;
+}
+
+.Pane7 {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    grid-column-gap: 2vw;
+    text-align: right;
+    height: 78vh;
+}
+
+.Pane7Heading {
+    margin-bottom: 2vw;
+}
+
+.Pane7Desc {
+    margin-right: 2.56vw;
+    margin-bottom: 10vh;
+    align-self: flex-start;
+    margin-top: 5vw;
+}
+
+.Pane7Text {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.7rem;
+    line-height: 2rem;
+}
+
+.SrollPaneBG7 {
+    width: 38.75vw;
+}
+
+.ReportImg {
+    width: 30vw;
+}
+
+.Report-container {
+    width: 30vw;
+}
+
+.RArea {
+    width: fit-content;
+    position: absolute;
+    grid-area: 1/2/2/3;
+    left: 1vw;
+    top: 2.05vw;
+    overflow: hidden;
+    border-radius: 2%;
+}
+
+.Pane5 {
+    height: 75vh;
+}
+
+.SrollPaneBG5 {
+    width: 48vw;
+    position: absolute;
+    top: 24.26vh;
+    left: 50vw;
+}
+
+.Pane5Heading {
+    font-size: 3.438rem;
+    width: 18.7vw;
+    margin-top: 11.94vh;
+    margin-left: 56.20vw;
+}
+
+.TestArea {
+    margin: 0;
+    width: fit-content;
+    position: absolute;
+    top: 10.65vh;
+    left: 6.875vw;
+    display: flex;
+}
+
+.swiper-container {
+    width: 43.96vw;
+    height: 32.29vw;
+    background-color: #F9F9F9;
+    border-radius: 1.93vw;
+    box-shadow: 6px 26px 99px rgba(0, 0, 0, 0.1);
+}
+
+.Testimonial {
+    width: 43.96vw;
+    height: 32.29vw;
+    display: grid;
+    grid-template-rows: 1fr 10vw;
+}
+
+.TestText {
+    font-size: 2.375rem;
+    width: 29.79vw;
+    color: #707070;
+    padding: 7.69vh 0 0 3.59vw;
+}
+
+.SmallTestText {
+    align-self: center;
+}
+
+.DocDetails {
+    display: flex;
+    width: 19.4vw;
+    height: fit-content;
+    align-items: flex-start;
+    padding-left: 3.59vw;
+}
+
+.DoctorImg {
+    width: 7.03vw;
+    padding-right: 1.41vw;
+}
+
+.DocText {
+    align-self: center;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+}
+
+.DocName {
+    font-family: LeagueSpartan, sans-serif;
+}
+
+.DocDes {
+    font-family: Montserrat-Regular, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.NextButton {
+    width: 10vw !important;
+    height: 10vw !important;
+    left: 39vw !important;
+    top: 12.75vw !important;
+}
+
+.BackArrow {
+    width: 1.057vw !important;
+    height: 1.057vw !important;
+    top: 35vw !important;
+}
+
+.BackArrow:focus,
+.NextButton:focus {
+    outline: none;
+}
+
+.swiper-pagination {
+    text-align: end !important;
+    width: 96% !important;
+    bottom: 15px !important;
+}
+
+.swiper-pagination-bullet {
+    opacity: 1;
+    height: 1.04vw !important;
+    width: 1.04vw !important;
+    background-color: #A5A5A5 !important;
+    margin-right: 0.4vw;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: transparent !important;
+    height: 0.73vw !important;
+    width: 0.73vw !important;
+    border: #A5A5A5 solid 0.15625vw !important;
+    margin-right: 0.4vw;
+}
+
+.ScrollPaneBG6 {
+    width: 19.22vw;
+    position: absolute;
+    top: 10.09vh;
+    left: 72.60vw;
+}
+
+.Pane6Heading {
+    font-size: 3.438rem;
+    margin-top: 6.85vh;
+    margin-left: 6.875vw;
+}
+
+.Pane6Text {
+    font-size: 2.563rem;
+    width: 49.01vw;
+    line-height: 2.938rem;
+    margin-top: 1.6vh;
+    margin-left: 6.875vw;
+}
+
+.DownloadBtn {
+    font-family: Roboto-Medium, sans-serif;
+    font-size: 1.375rem;
+    padding: 1.48vh 2.03vw;
+    width: 6.25vw;
+    width: fit-content;
+    width: -moz-fit-content;
+    border-radius: 31px;
+    margin-top: 4.35vh;
+    margin-left: 6.875vw;
+    margin-bottom: 20.02vh;
+    color: white;
+    background: #5d7dbe; 
+    background: -webkit-linear-gradient(to right, #3c5185 , #5d7dbe);
+    background: linear-gradient(to right, #3c5185 , #5d7dbe);
+    /* background: rgba(93, 125, 190);
+    background: -webkit-linear-gradient(to right, rgba(60, 81, 133), rgba(93, 125, 190));
+    background: linear-gradient(to right, rgba(60, 81, 133), rgba(93, 125, 190)); */
+    cursor: pointer;
+}
+
+div.DownloadBtn:hover {
+    background: rgba(60, 81, 133);
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        font-size: calc(9px + 11 *((100vw - 350px)/418));
+    }
+
+    .Pane1 {
+        width: 100%;
+    }
+
+    .SrollPaneBG1,
+    .SrollPaneBG2,
+    .SrollPaneBG3,
+    .SrollPaneBG5 {
+        position: static;
+        width: 75vw;
+        margin: 10vw 12vw 10vw 12vw;
+    }
+
+    .Pane1Heading,
+    .Pane1Text,
+    .Pane1IconDisp,
+    .Pane2Heading,
+    .Pane2Text,
+    .Pane2IconDisp,
+    .Pane3Heading,
+    .Pane3Text,
+    .Pane3IconDisp,
+    .Pane5Heading,
+    .Pane6Heading,
+    .Pane6Text,
+    .Pane7Heading {
+
+        width: 75vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .Pane1Text,
+    .Pane2Text,
+    .Pane3Text,
+    .Pane6Text {
+        text-align: justify;
+    }
+
+    .Pane6Text {
+        font-size: 1.688rem;
+        margin-top: 8vw;
+    }
+
+    .Pane1IconDisp,
+    .Pane2IconDisp {
+        flex-wrap: wrap;
+        width: 60vw;
+        margin-top: 10vw;
+    }
+
+    .Pane3IconDisp {
+        flex-wrap: wrap;
+        width: 25vw;
+        margin-top: 5vw;
+    }
+
+    .Pane1Icon,
+    .Pane2Icon,
+    .Pane3Icon {
+        width: 25vw;
+        margin: 3vw 0;
+    }
+
+    .Pane3Icon img {
+        transform: scale(2.5);
+        margin: 5vw auto;
+    }
+
+    .Pane1Icon img,
+    .Pane2Icon img {
+        width: 10vw !important;
+    }
+
+    .icondesc {
+        text-align: center;
+        justify-self: center;
+    }
+
+    .Shelf {
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: column dense;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .Clogo {
+        width: 25vw;
+    }
+
+    .Clogodesc {
+        width: 35vw;
+    }
+
+    .CL1 {
+        grid-area: 1/1/2/2;
+    }
+
+    .CL2 {
+        grid-area: 1/2/2/3;
+    }
+
+    .CL3 {
+        grid-area: 3/1/4/2;
+    }
+
+    .CL4 {
+        grid-area: 3/2/4/3;
+    }
+
+    .CL5 {
+        grid-area: 5/1/6/3;
+    }
+
+    .CD1 {
+        grid-area: 2/1/3/2;
+    }
+
+    .CD2 {
+        grid-area: 2/2/3/3;
+    }
+
+    .CD3 {
+        grid-area: 4/1/5/2;
+    }
+
+    .CD4 {
+        grid-area: 4/2/5/3;
+    }
+
+    .CD5 {
+        grid-area: 6/1/7/3;
+    }
+
+    .TestArea {
+        top: 15vw;
+    }
+
+    .swiper-container {
+        width: 80vw;
+        height: 55vw !important;
+    }
+
+    .Testimonial {
+        width: 75vw;
+        height: 45vw !important;
+    }
+
+    .TestText {
+        font-size: 1.25rem;
+        width: 60vw;
+        padding: 12vw 0 0 6vw;
+    }
+
+    .DocText {
+        font-size: 0.8rem;
+    }
+
+    .DocDetails {
+        width: 55vw;
+        height: fit-content;
+        padding-left: 8vw;
+    }
+
+    .DoctorImg {
+        width: 12vw;
+        padding-right: 5vw;
+    }
+
+    .NextButton {
+        width: 20vw !important;
+        height: 20vw !important;
+        left: 70vw !important;
+        top: 25vw !important;
+    }
+
+    .BackArrow {
+        width: 3vw !important;
+        height: 3vw !important;
+        top: 63vw !important;
+    }
+
+    .swiper-pagination {
+        bottom: 6px !important;
+    }
+
+    .swiper-pagination-bullet {
+        height: 2vw !important;
+        width: 2vw !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        height: 1.73vw !important;
+        width: 1.73vw !important;
+    }
+
+    .Pane5 {
+        height: 80vh;
+        margin-top: 10vh;
+    }
+
+    .SrollPaneBG5 {
+        position: absolute;
+        top: 75vw;
+        left: 0;
+    }
+
+    .ScrollPaneBG6 {
+        display: none;
+    }
+
+    .DownloadBtn {
+        margin-left: auto;
+        margin-right: auto;
+        width: 40vw;
+        text-align: center;
+    }
+
+    .Pane7 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: right;
+        height: 85vh;
+        margin-top: 15vw;
+        margin-bottom: 30vw;
+    }
+
+    .Pane7Text {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin-top: 5vw;
+    }
+
+    .Pane7Desc {
+        margin-right: 0;
+        margin-bottom: 4vw;
+    }
+
+    .SrollPaneBG7 {
+        width: 80vw;
+        justify-self: center;
+        margin-left: 10vw;
+    }
+
+    .ReportImg {
+        width: 61vw !important;
+    }
+
+    .Report-container {
+        width: 61vw;
+    }
+
+    .RArea {
+        width: fit-content;
+        position: absolute;
+        grid-area: 2/1/3/2;
+        left: 17.5vw;
+        top: 5vw;
+        overflow: hidden;
+        border-radius: 2%;
+    }
+
+    .Pane1 {
+        margin-bottom: 0vh;
+    }
+
+    .Pane2 {
+        margin-bottom: 0vh;
+    }
+
+    .Pane3 {
+        margin-bottom: 0vh;
+    }
+
+    .Pane5 {
+        height: 75vh;
+        margin-top: 0;
+    }
+
+    .Pane7 {
+        margin-top: 0;
+        margin-bottom: 0vh;
+        height: 95vh;
+    }
+
+    #ScrollPanes {
+        grid-gap: 20vh;
+    }
+
+    @media only screen and (min-width: 570px) {
+        #LandingPage {
+            height: 175vh;
+        }
+
+        .Pane7 {
+            height: 125vh;
+        }
+
+        .Pane5 {
+            height: 100vh;
+        }
+
+    }
+
+    @media (min-aspect-ratio: 4/5) {
+        #ScrollPanes {
+            margin-top: 80vh;
+        }
+    }
+}

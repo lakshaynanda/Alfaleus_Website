@@ -1,0 +1,173 @@
+footer {
+    background-color: #F9F9F9;
+
+}
+
+.FooterContent {
+    display: flex;
+    padding: 12.1vh 6.8vw 0 6.8vw;
+    justify-content: space-between;
+}
+
+.FootHeading {
+    font-family: LeagueSpartan, sans-serif;
+    font-size: 2.375rem;
+    padding-bottom: 1.67vh;
+}
+
+.ActionButtons {
+    display: flex;
+    width: fit-content;
+    margin: 0;
+}
+
+.GetQuoteButton,
+.ReqQuote {
+    color: #BCBCBC;
+    font-size: 1.25rem;
+    font-family: Roboto-Medium, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    background-color: #474747;
+    border-radius: 31px;
+}
+
+.GetQuoteButton {
+    padding: 1.67vh 2.5vw;
+    margin-right: 1.8vw;
+}
+
+.ReqQuote {
+    padding: 1.67vh 1.4vw;
+}
+
+#EmailSub {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+    padding: 3.4vh 0;
+}
+
+#EmailSub input {
+    grid-area: 1/1/2/2;
+    width: 22.5vw;
+    border-radius: 31px;
+    border: none;
+    background-color: #DCDCDC;
+    font-size: 1.063rem;
+    padding: 23px 0 23px 31px;
+    color: #7B7B7B;
+    outline: none;
+}
+
+.EmailIcon {
+    grid-area: 1/1/2/2;
+    width: fit-content;
+    display: flex;
+    padding: 0 31px;
+    background-color: #BCBCBC;
+    border-radius: 31px;
+    justify-self: end;
+    cursor: pointer;
+}
+
+div.EmailIcon:hover{
+    opacity: 0.7;
+    transform: scale(1.05);
+    transition: 0.5s;
+} 
+
+.ActionButtons a:hover{
+    opacity: 0.9;
+    transform: scale(1.05);
+    transition: 0.5s;
+} 
+
+.SocialMedia a:hover{
+    opacity: 0.7;
+    transform: scale(1.06);
+    transition: 0.5s;
+} 
+
+.EmailIcon img {
+    width: 31px;
+    height: auto;
+    align-self: center;
+}
+
+.RegOffice p,
+.Enquiries p {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.688rem;
+    width: 18vw;
+    text-align: justify;
+    margin: 0;
+}
+
+.Enquiries p {
+    width: 13.7vw;
+}
+
+.SocialMedia {
+    display: flex;
+    justify-content: space-between;
+}
+
+.SocialMedia img {
+    width: 2.73vw;
+    height: auto;
+}
+
+.Copyright {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 7vh 0 3.5vh 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .FooterContent {
+        flex-direction: column;
+        padding-top: 5vw;
+    }
+
+    .RegOffice p,
+    .Enquiries p {
+        font-size: 1.25rem;
+        width: 75vw;
+    }
+
+    .RegOffice p {
+        text-align: left;
+    }
+
+    .FootHeading {
+        font-size: 2rem;
+        margin-top: 10vw;
+    }
+
+    .GetQuoteButton {
+        padding: 1.67vh 8vw;
+        margin-right: 1.8vw;
+    }
+
+    .ReqQuote {
+        padding: 1.67vh 5vw;
+    }
+
+    #EmailSub input {
+        width: 79vw;
+        padding: 18px 0 18px 31px;
+
+    }
+
+    .SocialMedia {
+        justify-content: start;
+    }
+
+    .SocialMedia img {
+        padding: 6vw;
+        width: 8vw;
+    }
+}

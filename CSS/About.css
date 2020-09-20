@@ -1,0 +1,272 @@
+#NavBar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.AboutContainer {
+    margin-bottom: 35vh;
+}
+
+.AboutHeading,
+.TeamHeading {
+    font-family: LeagueSpartan, sans-serif;
+    font-size: 3.438rem;
+    margin-top: 26.67vh;
+    margin-left: 8.91vw;
+}
+
+.AboutText {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.875rem;
+    text-align: justify;
+    margin-left: 8.91vw;
+    width: 41.25vw;
+}
+
+.AboutBG {
+    position: absolute;
+    top: 25.56vh;
+    left: 57.0vw;
+    width: 40.73vw;
+}
+
+
+.ShelfHeading {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.875rem;
+    text-align: center;
+    margin-bottom: 1.4vh;
+}
+
+.Shelf {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(5, auto);
+    grid-row-gap: 2vh;
+    justify-content: space-between;
+    width: 84.6vw;
+    padding: 12.2vh 6.875vw;
+    margin: auto auto;
+    background-color: #F9F9F9;
+}
+
+.Alogo {
+    width: 10.42vw;
+}
+
+.TeamHeading {
+    margin-top: 15vh;
+    margin-bottom: 5.9vh;
+}
+
+.TeamPane {
+    position: relative;
+}
+
+.swiper-container {
+    height: 45vw !important;
+}
+
+.TeamCard {
+    display: flex;
+    justify-content: center;
+}
+
+.CardStack {
+    width: fit-content;
+    display: flex;
+}
+
+.CardElement {
+    width: 23.75vw;
+    height: 32.29vw;
+    margin: 3vw 2.4vw;
+
+    background-color: #F9F9F9;
+    border-radius: 1.93vw;
+    box-shadow: 6px 26px 99px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.TeamImg {
+    width: 13.8vw;
+}
+
+
+.TeamText {
+    color: #707070;
+    align-self: center;
+    text-align: center;
+    width: 17vw;
+    line-height: 2.063rem;
+}
+
+.TName {
+    font-family: LeagueSpartan, sans-serif;
+    font-size: 2rem;
+}
+
+.TName a{
+    text-decoration: none;
+    color: #707070;
+}
+
+
+.TDes {
+    font-family: Montserrat-Regular, sans-serif;
+    font-weight: 500;
+    font-size: 1.688rem;
+    font-style: italic;
+}
+
+.NextButton {
+    width: 10vw !important;
+    height: 10vw !important;
+    left: 86vw !important;
+    top: 24vw !important;
+}
+
+.BackArrow {
+    width: 1.057vw !important;
+    height: 1.057vw !important;
+    top: 45vw !important;
+    left: 10vw !important;
+}
+
+.BackArrow:focus,
+.NextButton:focus {
+    outline: none;
+}
+
+.swiper-pagination {
+    text-align: end !important;
+    width: 90% !important;
+    bottom: 7vw !important;
+}
+
+.swiper-pagination-bullet {
+    opacity: 1;
+    height: 1.04vw !important;
+    width: 1.04vw !important;
+    background-color: #A5A5A5 !important;
+    margin-right: 0.4vw;
+
+}
+
+.swiper-pagination-bullet-active {
+    background-color: transparent !important;
+    height: 0.73vw !important;
+    width: 0.73vw !important;
+    border: #A5A5A5 solid 0.15625vw !important;
+    margin-right: 0.4vw;
+}
+
+@media only screen and (max-width: 768px) {
+
+    :root {
+        font-size: calc(9px + 11 *((100vw - 350px)/418));
+    }
+
+    .AboutContainer {
+        margin-top: 30vw;
+        margin-bottom: 40vw;
+    }
+
+    .AboutBG {
+        position: static;
+        width: 75vw;
+        margin: 10vw 12vw 10vw 12vw;
+    }
+
+    .AboutHeading,
+    .AboutText,
+    .TeamHeading {
+
+        width: 75vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .AboutText {
+        text-align: justify;
+    }
+
+    .Shelf {
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        padding: 10vw 6vw;
+        margin-bottom: 25vw;
+    }
+
+    .Alogo {
+        width: 20vw;
+    }
+
+
+    .swiper-container {
+        height: 135vw !important;
+    }
+
+    .CardStack {
+        flex-direction: column;
+        margin-top: 7vw;
+    }
+
+    .CardElement {
+        height: 30vw;
+        width: 70vw;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .TeamImg {
+        width: 18vw;
+    }
+
+    .TName,
+    .TDes,
+    .TeamText {
+        font-size: 1rem;
+        line-height: 1rem;
+        width: 40vw;
+        text-align: left;
+    }
+
+    .NextButton {
+        width: 20vw !important;
+        height: 20vw !important;
+        left: 78vw !important;
+        top: 70vw !important;
+    }
+
+    .BackArrow {
+        width: 3vw !important;
+        height: 3vw !important;
+        top: 135vw !important;
+        left: 13vw !important;
+    }
+
+    .swiper-pagination {
+        width: 85% !important;
+        bottom: 16vw !important;
+    }
+
+    .swiper-pagination-bullet {
+        height: 2vw !important;
+        width: 2vw !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        height: 1.73vw !important;
+        width: 1.73vw !important;
+    }
+
+}

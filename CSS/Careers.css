@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#NavBar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.CareerContainer {
+    display: flex;
+    margin-top: 27.13vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20vh;
+
+}
+
+.CareerIllustration img {
+    width: 42.24vw;
+    height: auto;
+    margin: 6.4vh 0 0 3.8vw;
+
+}
+
+.text {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.875rem;
+    text-align: justify;
+    line-height: 2.313rem;
+    padding: 0 10.83vw 0 0;
+    width: 31.51vw;
+    height: fit-content;
+}
+
+.CareerHeading {
+    font-family: LeagueSpartan, sans-serif;
+    font-size: 3.438rem;
+    margin-bottom: 1.57vh;
+    width: fit-content;
+    line-height: 5rem;
+}
+
+.CareerLink {
+    font-size: 2.375rem;
+    text-decoration: none;
+    color: #2745C4;
+}
+
+.CareerLink a{
+    text-decoration: none;
+    color: #2745C4;
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        font-size: calc(9px + 11 *((100vw - 350px)/418));
+    }
+
+    .CareerIllustration img{
+        position: static;
+        width: 75vw;
+        margin: 20vw 12vw 10vw 12vw;
+    }
+
+    .CareerHeading,
+    .text
+     {
+        width: 70vw;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+    }
+
+    .CareerHeading{
+        margin-bottom: 10vw;
+    }
+
+    .CareerContainer{
+        margin-top: 10vw;
+    }
+}
